@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo de Banner Rotativo - Carousel</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta author="Jefferson Jamess - youtube.com/falafera">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      </head>
+      <style>
+          html{
+              scroll-behavior: smooth;
+              }
+
+          .row {
+              margin-left: 0px;
+              margin-right: 0px;
+          }
+      </style>
+<body>
+<!-- INÍCIO DO MENU SUPERIOR -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#links-menu" style="background-color: white;">
+					<i class="material-icons">menu</i>
+				</button>
+			</div>
+			
+
+			<nav id="links-menu" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+				</ul>
+			</nav>
+		</div>
+	</nav>
+
+<!-- CAROUSEL -->
+    <div class="container">
+        <div id="Carrosel" class="carousel slide" data-ride="carousel">
+            <!-- INDICADORES -->
+            <ol class="carousel-indicators">
+                <li data-target="#Carrosel" data-slide-to="0" class="active"></li>
+                <li data-target="#Carrosel" data-slide-to="1"></li>
+                <li data-target="#Carrosel" data-slide-to="2"></li>
+                <li data-target="#Carrosel" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/projeto1.jpg" class="img-fluid" width="100%" height="auto" alt="banners" title="Portifólio Simples">
+                </div>
+                
+                <div class="item">
+                    <img src="images/projeto2.jpg" class="img-fluid" width="100%" height="auto" alt="banners" title="Tabela de Tarefas">
+                </div>
+
+                <div class="item">
+                    <img src="images/projeto3.jpg" class="img-fluid" width="100%" height="auto" alt="banners" title="Bot de vendas">
+                </div>
+
+                <div class="item">
+                    <img src="images/projeto4.jpg" class="img-fluid" width="100%" height="auto" alt="banners" title="portifólio melhorado">
+                </div>
+
+            </div>
+
+            <!-- CONTROLADORES -->
+            <a href="#Carrosel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+
+            <a href="#Carrosel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Proximo</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- PROJETOS -->
+
+    <div class="container">
+        <h1 class="text-center" id="Projetos" style="font-weight: bold;"> PROJETOS</h1>
+
+        <!-- projeto 1 -->
+        <div class="row">
+            <div class="col-md-4 col-lg-3 col-xs-12">
+                <img src="images/projeto1.jpg" class="img-fluid" width="100%" height="auto" alt="projeto1">
+      
+              <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bot de Vendas Whatsapp</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eu o programei para que qualquer que seja a mensagem enviada o responsável pelo bot, o mesmo mandandasse uma mensagem de boas vindas e mandasse os serviços da loja. </font><font style="vertical-align: inherit;"></font></font></p>
+              <a href="https://github.com/DutraGames/WhatsApp-Bot-de-Vendas" target="_blank"><button type="button" class="btn btn-dark">Ver código</button></a>
+        </div>
+
+                    <!-- projeto 2 -->
+        <div class="row">
+            <div class="col-md-4 col-lg-3 col-xs-12">
+                <img src="images/projeto2.jpg" class="img-fluid" width="100%" height="auto" alt="projeto1">
+      
+              <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Listagem de Tarefas</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Um simples arquivo HTML, que pode ajudar a organizar sua atividades. </font><font style="vertical-align: inherit;"></font></font></p>
+              <a href="https://github.com/DutraGames/Listagem-de-Tarefas" target="_blank"><button type="button" class="btn btn-dark">Ver código</button></a>
+        </div>
+
+                    <!-- projeto 3 -->
+        <div class="row">
+            <div class="col-md-4 col-lg-3 col-xs-12">
+                <img src="images/projeto3.jpg" class="img-fluid" width="100%" height="auto" alt="projeto1">
+      
+              <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Portifólio Simples</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Um simples portifólio em HTML e CSS feito por mim! </font><font style="vertical-align: inherit;"></font></font></p>
+              <a href="https://github.com/DutraGames/Simples-portifolio" target="_blank"><button type="button" class="btn btn-dark">Ver código</button></a>
+        </div>
+
+                    <!-- projeto 4 -->
+        <div class="row">
+            <div class="col-md-4 col-lg-3 col-xs-12">
+                <img src="images/projeto4.jpg" class="img-fluid" width="100%" height="auto" alt="projeto1">
+      
+              <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Portifólio Melhorado</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A versão melhorada do portifólio que havia publicado esses dias, espero que esteja melhor que o anterior! </font><font style="vertical-align: inherit;"></font></font></p>
+        </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- SOBRE -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xs-12">
+                <h1 class="text-center" id="Sobre" style="font-weight: bold;"> SOBRE</h1>
+                <img src="images/Dutra.jpeg" class="img-fluid" width="100%" height="auto" style="border-radius: 25%; border: 1px solid black; text-align: center;" alt="Dutra">
+                <h2 class="text-center" style="font-family: 'Times New Roman'; font-weight: bold;">GABRIEL DUTRA</h2>
+                <p class="text-center">Desenvolvedor web e de games. Gosta de passar o tempo recriando páginas ou jogos para melhorar suas habilidades</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Redes Sociais -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-5 col-xs-12">
+                <a href="https://github.com/DutraGames/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="img-fluid" width="25%" height="auto" alt="github"></a>
+                <a href="https://www.youtube.com/channel/UC12Fvp_lAzXHXD8WhulM4sw" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-512.png" class="img-fluid" width="25%" height="auto" alt="youtube"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
